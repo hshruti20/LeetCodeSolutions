@@ -1,4 +1,5 @@
 ﻿/**
+509.
 The Fibonacci numbers, commonly denoted F(n) form a sequence, called the Fibonacci sequence, such that each number is the sum of the two preceding ones, starting from 0 and 1. That is,
 
 F(0) = 0, F(1) = 1
@@ -20,27 +21,28 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FibonacciNumber
+namespace LeetCodeSolutions
 {
     class FibonacciNumber
     {
-        public int Fib(int n) {
-        
-          int firstnumber = 0, secondnumber = 1, result = 0;  
-   
+        public int Fib(int n)
+        {
+
+            int firstnumber = 0, secondnumber = 1, result = 0;
+
             if (n == 0) return 0; //To return the first Fibonacci number   
             if (n == 1) return 1; //To return the second Fibonacci number   
-   
-   
-            for (int i = 2; i <= n; i++)  
-            {  
-                result = firstnumber + secondnumber;  
-                firstnumber = secondnumber;  
-                secondnumber = result;  
-            }  
-   
-            return result;  
-        
-    }
+
+
+            for (int i = 2; i <= n; i++)
+            {
+                result = firstnumber + secondnumber;
+                firstnumber = secondnumber;
+                secondnumber = result;
+            }
+
+            return result;
+
+        }
     }
 }
